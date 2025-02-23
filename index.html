@@ -4,8 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Code CLA for Web Developers</title>
 </head>
+<style>
+    input,
+    label {
+        display: block;
+    }
+</style>
 
 <body>
     <!-- I've interpreted this as the header menu -->
@@ -111,8 +118,10 @@
             <img src="./img/logo.svg" alt="CLA logo image">
             <div class="description">
                 <h3>Brought to you by CLA</h3>
-                <p>Join the Ultimate Hub for Competitive Programmers and reach growth and excellence in competitive programming.</p>
-                <p>Coding challenges are made simple by our platform. Access a dashboard of tools for high-quality challenge design.</p>
+                <p>Join the Ultimate Hub for Competitive Programmers and reach growth and excellence in competitive
+                    programming.</p>
+                <p>Coding challenges are made simple by our platform. Access a dashboard of tools for high-quality
+                    challenge design.</p>
             </div>
         </section><!-- PoweredByCLA section -->
 
@@ -120,7 +129,9 @@
             <div class="description">
                 <h3>Testimonials</h3>
                 <p>"This platform is an absolute game-changer for competitive programmers. The
-                    extensive range of problems and challenges offered here truly hones your skills and prepares you for any coding competition. With detailed solutions and an active community, it's the perfect environment to sharpen your coding prowess."</p>
+                    extensive range of problems and challenges offered here truly hones your skills and prepares you for
+                    any coding competition. With detailed solutions and an active community, it's the perfect
+                    environment to sharpen your coding prowess."</p>
             </div>
             <div class="card">
                 <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="client picture">
@@ -129,12 +140,32 @@
                     <p>Software Engineer</p>
                 </div>
             </div>
+        </section> <!-- testimonials section -->
 
+        <section id="contact">
+            <h2>Contact us</h2>
 
-        </section>
+            <form action="#" method="post">
+                <div class="formFields">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="formFields">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="formFields">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
 
-
+        </section> <!-- testimonials section -->
     </main>
+
+    <footer>
+        <p>© 2024 Your Competitive Programming Platform. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>
