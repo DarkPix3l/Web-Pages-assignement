@@ -1,0 +1,79 @@
+/* Global Variables */
+:root {
+  /* color palette */
+  --Primary-Color: #8053ff;
+  --Main-Body-Color: #23155b;
+  --Gray-Light-Color: #817d8e;
+  --White-Color: #ffffff;
+  --Background-Color: #f4f4f4;
+
+  /* consistent styling */
+  --default-radius: 5px;
+  --section-margin-TB: 50px;
+}
+
+/* Universal Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  font-size: 16px;
+  /* font-family: "Martel Sans", sans-serif; */
+  font-family: "Noto Sans Khojki", sans-serif;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--Background-Color);
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: var(--default-radius);
+}
+
+.wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+section {
+  min-height: 500px;
+  margin: 105px 0;
+}
+
+.purple-span {
+  color: var(--Primary-Color);
+}
+
+.purple-fill-btn {
+  border: none;
+  background-color: var(--Primary-Color);
+  color: var(--White-Color);
+}
+
+.purple-border-btn {
+  border: 1px solid var(--Primary-Color);
+  color: var(--Primary-Color);
+}

@@ -9,129 +9,182 @@
     <link rel="canonical" href="https://codelabsacademy.com/">
 
     <!-- Open Graph meta tags for social media -->
-    <meta property="og:title" content="Code CLA for Web Developers">
+    <!--     <meta property="og:title" content="Code CLA for Web Developers">
     <meta property="og:description"
         content="CodeCLA is where programmers participate in programming contests, solve algorithm and data structure challenges, and become a part of an awesome community.">
     <meta property="og:image" content="./img/logo.svg">
     <meta property="og:url" content="https://codelabsacademy.com/">
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="website"> -->
 
     <!-- Robots meta tag to control search engine crawling and indexing -->
-    <meta name="robots" content="index, follow">
+    <!--     <meta name="robots" content="index, follow"> -->
 
     <title>Code CLA for Web Developers</title>
-    <style>
-        input,
-        label {
-            display: block;
-        }
-    </style>
+    <!-- styles -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khojki&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-    <!-- I've interpreted this as the header menu -->
-    <header>
-        <img src="./img/logo.svg" alt="CLA logo image">
-        <ul style="list-style-type: none; padding: 0;">
-            <li>CodeCLA</li>
-            <li><a href="#" target="_blank" rel="noopener noreferrer">For Coders</a></li>
-            <li><a href="#" target="_blank" rel="noopener noreferrer">For Developers</a></li>
-        </ul>
+    <header class="wrapper">
 
-        <button>Join now</button>
+        <div class="logo">
+            <img src="./img/logo.svg" alt="CLA logo image">
+            <p>CodeCLA</p>
+        </div>
+
+        <nav>
+            <ul class="menulinks">
+                <li><a href="#" target="_blank" rel="noopener noreferrer">For Coders</a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">For Developers</a></li>
+                <li><a href="./signUp_page.html" target="_blank" rel="noopener noreferrer">Join now</a></li>
+            </ul>
+        </nav>
+
     </header>
-    <main>
+
+    <main class="wrapper">
+
         <section id="hero">
             <div id="callToAction">
                 <h1>The place for Competitive Programmers</h1>
                 <p>CodeCLA is where programmers participate in programming contests, solve algorithm and data structure
-                    challenges, and become a part of an awesome community.</p>
+                    challenges, <br>and become a part of an awesome community.</p>
                 <div class="buttons">
-                    <button>Become a coder</button>
-                    <button>Become a manager</button>
+                    <button class="purple-fill-btn">Become a coder</button>
+                    <button class="purple-border-btn">Become a manager</button>
                 </div>
             </div>
         </section> <!-- hero section -->
 
         <section id="KeyMetrics">
-            <div>
-                <h2>Practice to level-up</h2>
-                <p><span><b>1K </b></span>Problems for practice</p>
-                <p><span><b>100+ </b></span>Coders</p>
-                <p><span><b>10 </b></span>Programming languages</p>
-                <p><span><b>130K+ </b></span>Submissions</p>
+            <h2>Practice to level-up</h2>
+            <div class="grid">
+                <div class="key-card">
+                    <p><span><b>1K</b></span>
+                        <br>Problems for practice
+                    </p>
+                </div>
+                <div class="key-card">
+                    <p><span><b>100+</b></span>
+                        <br>Coders
+                    </p>
+                </div>
+                <div class="key-card">
+                    <p><span><b>10</b></span>
+                        <br>Programming languages
+                    </p>
+                </div>
+                <div class="key-card">
+                    <p><span><b>130K+</b></span>
+                        <br>Submissions
+                    </p>
+                </div>
             </div>
         </section> <!-- KeyMetrics section -->
 
         <section id="forCoders">
-            <h2>For coders</h2>
+            <h3>For coders</h3>
             <div class="description">
-                <h3>What you will gain</h3>
+                <h2>What you will <span class="purple-span">gain</span></h2>
                 <p>You are a coder who wants to level up your skills in coding and problem-solving? Here’s what we
                     provide:</p>
             </div>
             <div class="list">
-                <ul style="list-style-type: none;">
 
-                    <li><img src="./img/ok.svg" alt="checkmark icon"><strong> Rich practice set of problems:</strong>
-                        Access a rich library of practice problems,
-                        algorithms, and data structures to enhance your skills.</li>
+                <div class="list-card">
+                    <img src="./img/ok.svg" alt="checkmark icon">
+                    <p><strong> Rich practice set of problems:</strong>
+                        <br>Access a rich library of practice problems,
+                        algorithms, and data structures to enhance your skills.
+                    </p>
+                </div>
 
-                    <li><img src="./img/ok.svg" alt="checkmark icon"><strong> Universal contests:</strong> Compete in
-                        regularly scheduled contests against top talent
-                        from around the globe.</li>
+                <div class="list-card">
+                    <img src="./img/ok.svg" alt="checkmark icon">
+                    <p><strong> Universal contests:</strong> Compete in regularly scheduled contests against top talent
+                        from around the globe.</p>
+                </div>
 
-                    <li><img src="./img/ok.svg" alt="checkmark icon"><strong> Constant feedback:</strong> Receive
-                        personalized insights and feedback to improve your
-                        problem-solving abilities.</li>
+                <div class="list-card">
+                    <img src="./img/ok.svg" alt="checkmark icon">
+                    <p><strong> Constant feedback:</strong> Receive personalized insights and feedback to improve your
+                        problem-solving abilities.</p>
+                </div>
 
-                    <li><img src="./img/ok.svg" alt="checkmark icon"><strong> Sharing is caring:</strong> Connect with
-                        like-minded individuals, form teams, and tackle
-                        challenges together.</li>
+                <div class="list-card">
+                    <img src="./img/ok.svg" alt="checkmark icon">
+                    <p><strong> Sharing is caring:</strong> Connect with like-minded individuals, form teams, and tackle
+                        challenges together.</p>
+                </div>
 
-                    <li><img src="./img/ok.svg" alt="checkmark icon"><strong> Track your progress:</strong> Climb the
-                        ranks on our leaderboard.</li>
+                <div class="list-card">
+                    <img src="./img/ok.svg" alt="checkmark icon">
+                    <p><strong> Track your progress:</strong> Climb the ranks on our leaderboard.</p>
+                </div>
 
-                    <li><img src="./img/ok.svg" alt="checkmark icon"><strong> Detailed solutions for problems:</strong>
-                    </li>
-                </ul>
-                <button>Join coders community</button>
+                <div class="list-card">
+                    <img src="./img/ok.svg" alt="checkmark icon">
+                    <p><strong> Detailed solutions for problems:</strong></p>
+                </div>
+
             </div>
+            <button class="purple-fill-btn">Join coders community</button>
         </section> <!-- forCoders section -->
 
         <section id="forManagers">
-            <h2>For Managers</h2>
+            <h3>For Managers</h3>
             <div class="description">
-                <h3>Access a high-professional platform for coding challenges design</h3>
+                <h2>Access a <span class="purple-span">high-professional</span> platform for coding challenges design</h2>
             </div>
+
             <div class="list">
-                <ul style="list-style-type: none;">
+                <div class="list-card">
+                    <img src="./img/ok.svg" alt="checkmark icon">
+                    <p>Craft tailored coding challenges suited to your specific needs and objectives.</p>
+                </div>
 
-                    <li><img src="./img/ok.svg" alt="checkmark icon"> Craft tailored coding challenges suited to your
-                        specific needs and objectives.</li>
+                <div class="list-card">
+                    <img src="./img/ok.svg" alt="checkmark icon">
+                    <p>Design challenges that align perfectly with your recruitment criteria.</p>
+                </div>
 
-                    <li><img src="./img/ok.svg" alt="checkmark icon"> Design challenges that align perfectly with your
-                        recruitment criteria.</li>
+                <div class="list-card">
+                    <img src="./img/ok.svg" alt="checkmark icon">
+                    <p>Choose from a wide range of problem types, including algorithmic, data structures, puzzles, and
+                        more.</p>
+                </div>
 
-                    <li><img src="./img/ok.svg" alt="checkmark icon"> Choose from a wide range of problem types,
-                        including algorithmic, data structures, puzzles, and
-                        more.</li>
+                <div class="list-card">
+                    <img src="./img/ok.svg" alt="checkmark icon">
+                    <p>Ergonomic tools for challenge design.</p>
+                </div>
 
-                    <li><img src="./img/ok.svg" alt="checkmark icon"> Ergonomic tools for challenge design.</li>
+                <div class="list-card">
+                    <img src="./img/ok.svg" alt="checkmark icon">
+                    <p>Collaborate with colleagues or peers in creating and refining coding challenges.</p>
+                </div>
 
-                    <li><img src="./img/ok.svg" alt="checkmark icon"> Collaborate with colleagues or peers in creating
-                        and refining coding challenges.</li>
+                <div class="list-card">
+                    <img src="./img/ok.svg" alt="checkmark icon">
+                    <p>Access dedicated support from our team of experts.</p>
+                </div>
 
-                    <li><img src="./img/ok.svg" alt="checkmark icon"> Access dedicated support from our team of experts.
-                    </li>
-                </ul>
-                <button>Join managers community</button>
             </div>
-        </section> <!-- forCoders section -->
+            <button class="purple-fill-btn">Join managers community</button>
+
+        </section> <!-- forManagers section -->
 
         <section id="PoweredByCLA">
-            <img src="./img/logo.svg" alt="CLA logo image">
+            <img src="./img/team.svg" alt="cla team photo">
+
             <div class="description">
+                <img src="./img/logo.svg" alt="CLA logo image">
                 <h3>Brought to you by CLA</h3>
                 <p>Join the Ultimate Hub for Competitive Programmers and reach growth and excellence in competitive
                     programming.</p>
@@ -141,14 +194,15 @@
         </section><!-- PoweredByCLA section -->
 
         <section id="testimonials">
-            <div class="description">
-                <h3>Testimonials</h3>
+            <div class="t-description">
+                <h2>Testimonials</h2>
+            </div>
+            <div class="card">
+                <p>★★★★★</p>
                 <p>"This platform is an absolute game-changer for competitive programmers. The
                     extensive range of problems and challenges offered here truly hones your skills and prepares you for
                     any coding competition. With detailed solutions and an active community, it's the perfect
                     environment to sharpen your coding prowess."</p>
-            </div>
-            <div class="card">
                 <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="client picture">
                 <div class="cardDescription">
                     <p><b>June Cha</b></p>
@@ -161,24 +215,24 @@
             <h2>Contact us</h2>
 
             <form action="#" method="post">
-                <div class="formFields">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
-                </div>
-                <div class="formFields">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
-                </div>
-                <div class="formFields">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
-                </div>
-                <button type="submit">Submit</button>
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+
+                <button class="purple-fill-btn" type="submit">Submit</button>
             </form>
         </section> <!-- contact section -->
     </main>
 
-    <footer>
+    <footer class="wrapper">
         <p>© 2024 Your Competitive Programming Platform. All rights reserved.</p>
     </footer>
 </body>
