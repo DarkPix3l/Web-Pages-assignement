@@ -1,15 +1,10 @@
 h1 {
-  /* font-size: 3rem; */
-  /* font-size: 7vmin; */
-  /* font-size: 3.0417vw */
   font-size: clamp(2rem, 2vw + 0.75rem, 3rem);
   font-weight: 900;
 }
 
 h2 {
   font-size: clamp(1rem, 2vw + 0.75rem, 2rem);
-  /* text-align: center; */
-  /* margin-bottom: 30px; */
 }
 
 h3 {
@@ -103,7 +98,6 @@ nav ul li:last-child a {
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
-  flex-grow: 0;
   gap: 10px;
 }
 
@@ -167,6 +161,7 @@ nav ul li:last-child a {
   background-color: var(--Main-Body-Color);
   padding: 50px;
   color: var(--White-Color);
+  margin-left: 10%;
 }
 
 form,
@@ -199,4 +194,139 @@ textarea {
 footer {
   height: 100px;
   width: 100%;
+}
+
+/* media queries */
+@media only screen and (max-width: 600px) {
+  .list {
+    grid-template-columns: repeat(auto-fit, minmax(463px, 1fr));
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  section {
+    min-height: 0;
+    margin: 55px 0;
+  }
+  h1 {
+    line-height: 44px;
+  }
+
+  .wrapper {
+    width: 90%;
+  }
+
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .logo,
+  .menulinks {
+    gap: 25px;
+    text-wrap: nowrap;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  nav ul li:last-child a {
+    padding: 1px 24px;
+  }
+
+  #hero {
+    padding: 0%;
+  }
+
+  #callToAction p {
+    margin: 30px 0;
+  }
+
+  .buttons button:first-child {
+    margin-right: 13px;
+  }
+
+  .description h2 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    line-height: 44px;
+  }
+
+  .list {
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    padding-left: 0;
+    margin: 30px 0;
+  }
+  .list-card {
+    padding-left: 0;
+  }
+  .list-card img {
+    width: auto;
+    height: auto;
+  }
+
+  #PoweredByCLA {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  #PoweredByCLA > img {
+    border-radius: 10%;
+  }
+  .description {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .wrapper {
+    gap: 20px;
+    margin: 50px 0;
+    width: 95%;
+    max-width: 91%;
+  }
+
+  .list {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .card {
+    padding: 24px;
+  }
+  .list-card img {
+    align-self: baseline;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  header {
+    flex-direction: column;
+  }
+  .menulinks {
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 30px;
+  }
+  #hero {
+    margin: 20px 0;
+  }
+  .buttons button:first-child {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .key-card {
+    padding: 7px;
+  }
+
+  .list {
+    grid-template-columns: repeat(auto-fit, minmax(292px, 1fr));
+  }
+
+  #contact {
+    margin-left: 0;
+    padding: 36px;
+  }
 }
