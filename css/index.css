@@ -88,8 +88,10 @@ nav ul li:last-child a {
 .list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
   margin: 50px 0;
+  text-wrap: balance;
 }
 
 .list-card {
@@ -106,8 +108,6 @@ nav ul li:last-child a {
   width: 50px;
   height: 50px;
 }
-
-/* forManagers section */
 
 /* PoweredByCLA section */
 #PoweredByCLA {
@@ -196,13 +196,6 @@ footer {
   width: 100%;
 }
 
-/* media queries */
-@media only screen and (max-width: 600px) {
-  .list {
-    grid-template-columns: repeat(auto-fit, minmax(463px, 1fr));
-  }
-}
-
 @media only screen and (max-width: 425px) {
   section {
     min-height: 0;
@@ -251,7 +244,7 @@ footer {
   }
 
   .list {
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-template-columns: 1fr;
     padding-left: 0;
     margin: 30px 0;
   }
@@ -285,14 +278,20 @@ footer {
     max-width: 91%;
   }
 
-  .list {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  .menulinks {
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 30px;
   }
   .card {
     padding: 24px;
   }
   .list-card img {
     align-self: baseline;
+  }
+  .buttons button:first-child {
+    margin: auto;
+    margin-bottom: 20px;
   }
 }
 
@@ -304,25 +303,12 @@ footer {
   header {
     flex-direction: column;
   }
-  .menulinks {
-    flex-direction: column;
-    margin-top: 20px;
-    gap: 30px;
-  }
   #hero {
     margin: 20px 0;
-  }
-  .buttons button:first-child {
-    margin: auto;
-    margin-bottom: 20px;
   }
 
   .key-card {
     padding: 7px;
-  }
-
-  .list {
-    grid-template-columns: repeat(auto-fit, minmax(292px, 1fr));
   }
 
   #contact {
