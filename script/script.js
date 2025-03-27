@@ -7,20 +7,28 @@ const position = document.getElementById("position");
 fetch("./script/testimonials.json")
   .then((response) => response.json())
   .then((data) => {
-    console.log(typeof data);
+    //console.log(typeof data);
 
+    let currentIndex = 0;
     function moveCard() {
-      data.forEach((element) => {
-        text.innerHTML = `<q>${element.text}</q>`;
-        photo.src = element.photo;
-        Pname.innerHTML = `<b>${element.name}</b>`; //laziness
-        position.innerText = element.position;
-        console.log(element);
-      });
+      const testimonial = data[currentIndex];
+
+      text.innerHTML = `<q>${testimonial.text}</q>`;
+      photo.src = testimonial.photo;
+      Pname.innerHTML = `<b>${testimonial.name}</b>`;
+      position.innerText = testimonial.position;
+      //console.log(element);
     }
-    document
-      .getElementById("left-btn")
-      .addEventListener("click", () => moveCard());
+    /* 
+    document.getElementById("left-btn").addEventListener("click",  () => {
+        currentIndex = (currentIndex + 1) % data.length;
+        moveCard();
+      }); */
+
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % data.length;
+      moveCard();
+    }, 3000);
   })
   .catch((error) => {
     console.error("Error:", error);

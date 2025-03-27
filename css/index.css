@@ -134,7 +134,7 @@ nav ul li:last-child a {
   margin-bottom: 30px;
 }
 
-.gridx3 {
+/* .gridx3 {
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -142,8 +142,9 @@ nav ul li:last-child a {
 
 .gridx3 img{
   width: 50px;
+  min-width: 50px;
   cursor: pointer;
-}
+} */
 
 .card {
   max-width: 500px;
