@@ -27,7 +27,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khojki&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
@@ -40,8 +39,8 @@
 
         <nav>
             <ul class="menulinks">
-                <li><a href="#" target="_blank" rel="noopener noreferrer">For Coders</a></li>
-                <li><a href="#" target="_blank" rel="noopener noreferrer">For Developers</a></li>
+                <li><a href="#forCoders" rel="noopener noreferrer">For Coders</a></li>
+                <li><a href="#forManagers" rel="noopener noreferrer">For Managers</a></li>
                 <li><a href="./signUp_page.html" target="_blank" rel="noopener noreferrer">Join now</a></li>
             </ul>
         </nav>
@@ -56,8 +55,8 @@
                 <p>CodeCLA is where programmers participate in programming contests, solve algorithm and data structure
                     challenges, <br>and become a part of an awesome community.</p>
                 <div class="buttons">
-                    <button class="purple-fill-btn">Become a coder</button>
-                    <button class="purple-border-btn">Become a manager</button>
+                    <a href="#forCoders"><button class="purple-fill-btn">Become a coder</button></a>
+                    <a href="#forManagers"><button class="purple-border-btn">Become a manager</button></a>
                 </div>
             </div>
         </section> <!-- hero section -->
@@ -219,20 +218,22 @@
     <section id="contact">
         <h2>Contact us</h2>
 
-        <form action="#" method="post">
+        <form name="myForm" action="#" method="POST">
 
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
-
+            <input type="text" id="name" name="name" placeholder="Your Name & Surname">
+            <div id="nameERROR" class="errorMessages"></div>
 
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <input type="email" id="email" name="email" placeholder="Your Email">
+            <div id="emailERROR" class="errorMessages"></div>
 
 
             <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+            <textarea id="message" name="message" placeholder="Your Message" rows="4"></textarea>
+            <div id="msgERROR" class="errorMessages"></div>
 
-            <button class="purple-fill-btn" type="submit">Submit</button>
+            <button class="purple-fill-btn" type="submit" onclick="validateForm()">Submit</button>
         </form>
     </section> <!-- contact section -->
 
@@ -240,8 +241,12 @@
         <p>© <span></span> Your Competitive Programming Platform. All rights reserved.</p>
     </footer>
 
+<!-- Getting scripty in here! -->
     <script src="./script/script.js"></script>
     <script src="./script/date.js"></script>
+    <script src="./script/formValidation.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> --> <!-- customized allert popup -->
+    </script>
 </body>
 
 </html>

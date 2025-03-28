@@ -10,6 +10,9 @@
   /* consistent styling */
   --default-radius: 5px;
   --section-margin-TB: 50px;
+
+  /* Error */
+  --errorColor: rgb(255 38 38);
 }
 
 /* Universal Reset */
@@ -27,9 +30,9 @@
 
 html {
   font-size: 16px;
-  /* font-family: "Martel Sans", sans-serif; */
   font-family: "Noto Sans Khojki", sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -44,6 +47,16 @@ a {
 ul,
 ol {
   list-style-type: none;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  font-family: "Noto Sans Khojki", sans-serif;
+}
+
+textarea {
+  resize: vertical;
 }
 
 button {
@@ -71,6 +84,7 @@ section {
   border: none;
   background-color: var(--Primary-Color);
   color: var(--White-Color);
+  margin-top: 10px;
 }
 
 .purple-border-btn {
