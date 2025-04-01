@@ -47,3 +47,32 @@ For this assignment, your objective is to create the mobile version of the landi
 In this task, you'll enrich the webpage's interactivity by integrating JavaScript.
 Initially, you'll concentrate on integrating the testimonials section, followed by
 implementing form validation.
+
+---
+
+## Part 5
+
+In this assignment, you'll refactor your code and rebuild the page using Tailwind CSS.
+
+### Tailwind Refactoring Approach
+
+The goal of this refactoring was to transition the existing CSS-based styling to Tailwind while maintaining readability, reusability, and efficiency. I aimed to improve maintainability by leveraging Tailwind’s utility-first approach while also preserving essential parts of the previous CSS setup.
+
+**Reusing Existing Styles**
+Instead of discarding all previous CSS, I extracted commonly used styles and incorporated them into Tailwind’s @layer base and @layer components.
+
+For global styles like typography, spacing, and form elements, I kept them in @layer base to ensure consistency across the project.
+
+**Defining Custom Components**
+Some elements required repeated styling, so I used @layer components to define reusable utility classes, such as:
+
+.purple-fill-btn for primary buttons
+
+.purple-border-btn for outlined buttons
+
+.list-card for structured content blocks
+
+**Ensuring Responsiveness**
+
+Mantained responsive typography using clamp() in the base styles.
+Used Tailwind’s breakpoints (sm:, md:, lg:) to control layout shifts across different screen sizes.
