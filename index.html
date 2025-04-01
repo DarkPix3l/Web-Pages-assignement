@@ -22,51 +22,53 @@
     <title>Code CLA for Web Developers</title>
     <!-- styles -->
     <!-- <link rel="stylesheet" href="./css/style.css"> -->
-   <!--  <link rel="stylesheet" href="./css/index.css"> -->
-   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!--  <link rel="stylesheet" href="./css/index.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./css/input.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khojki&display=swap" rel="stylesheet">
-  </head>
+</head>
 </head>
 
-<body>
-    <header class="wrapper mx-auto flex">
+<body class="bg-[var(--Background-Color)]">
+    <header class="wrapper flex flex-col items-center justify-center gap-10 mt-5 lg:flex-row lg:justify-between">
 
-        <div class="logo">
+        <div class="logo flex flex-col">
             <img src="./img/logo.svg" alt="CLA logo image">
             <p>CodeCLA</p>
         </div>
 
         <nav>
-            <ul class="menulinks">
+            <ul class="menulinks flex flex-col items-center gap-5 md:flex-row md:gap-7">
                 <li><a href="#forCoders" rel="noopener noreferrer">For Coders</a></li>
                 <li><a href="#forManagers" rel="noopener noreferrer">For Managers</a></li>
-                <li><a href="./signUp_page.html" target="_blank" rel="noopener noreferrer">Join now</a></li>
+                <li class="purple-fill-btn"><a href="./signUp_page.html" target="_blank" rel="noopener noreferrer">Join
+                        now</a></li>
             </ul>
         </nav>
 
     </header>
 
-    <main class=""">
+    <main class="wrapper">
 
         <section id="hero">
-            <div id="callToAction">
+            <div class="flex flex-col text-center gap-5 lg:gap-10">
                 <h1>The place for Competitive Programmers</h1>
-                <p>CodeCLA is where programmers participate in programming contests, solve algorithm and data structure
-                    challenges, <br>and become a part of an awesome community.</p>
+                <p>CodeCLA is where programmers participate in programming contests, solve algorithm and data structure challenges, and become a part of an awesome community.</p>
                 <div class="buttons">
-                    <a href="#forCoders"><button class="purple-fill-btn">Become a coder</button></a>
+                    <a href="#forCoders"><button class="purple-fill-btn mb-5 md:mb-0 md:mr-5">Become a
+                            coder</button></a>
                     <a href="#forManagers"><button class="purple-border-btn">Become a manager</button></a>
                 </div>
             </div>
         </section> <!-- hero section -->
 
         <section id="KeyMetrics">
-            <h2>Practice to level-up</h2>
-            <div class="grid">
-                <div class="key-card">
+            <h2 class="text-center mb-5 text-[var(--Primary-Color)]">Practice to level-up</h2>
+            <div class="grid grid-cols-1 justify-center gap-5 md:grid-cols-2">
+
+                <div class="key-card justify-self-end">
                     <p><span><b>1K</b></span>
                         <br>Problems for practice
                     </p>
@@ -76,7 +78,7 @@
                         <br>Coders
                     </p>
                 </div>
-                <div class="key-card">
+                <div class="key-card justify-self-end">
                     <p><span><b>10</b></span>
                         <br>Programming languages
                     </p>
@@ -96,7 +98,7 @@
                 <p>You are a coder who wants to level up your skills in coding and problem-solving? Here’s what we
                     provide:</p>
             </div>
-            <div class="list">
+            <div class="grid grid-cols-1 gap-5 my-9 lg:grid-cols-2">
 
                 <div class="list-card">
                     <img src="./img/ok.svg" alt="checkmark icon">
@@ -131,7 +133,7 @@
 
                 <div class="list-card">
                     <img src="./img/ok.svg" alt="checkmark icon">
-                    <p><strong> Detailed solutions for problems:</strong></p>
+                    <p><strong> Detailed solutions for problems.</strong></p>
                 </div>
 
             </div>
@@ -145,7 +147,7 @@
                 </h2>
             </div>
 
-            <div class="list">
+            <div class="grid grid-cols-1 gap-5 my-9 lg:grid-cols-2">
                 <div class="list-card">
                     <img src="./img/ok.svg" alt="checkmark icon">
                     <p>Craft tailored coding challenges suited to your specific needs and objectives.</p>
@@ -182,11 +184,13 @@
 
         </section> <!-- forManagers section -->
 
-        <section id="PoweredByCLA">
-            <img src="./img/team.svg" alt="cla team photo">
+        <section id="PoweredByCLA" class="grid grid-cols-1 gap-5 text-center items-center md:text-left md:grid-cols-2">
+
+            <img class="aspect-1/1 object-cover rounded-3xl max-w-[80%] sm:mx-auto" src="./img/team.svg"
+                alt="cla team photo">
 
             <div class="description">
-                <img src="./img/logo.svg" alt="CLA logo image">
+                <img class="mx-auto md:mx-0" src="./img/logo.svg" alt="CLA logo image">
                 <h3>Brought to you by CLA</h3>
                 <p>Join the Ultimate Hub for Competitive Programmers and reach growth and excellence in competitive
                     programming.</p>
@@ -195,19 +199,20 @@
             </div>
         </section><!-- PoweredByCLA section -->
 
-        <section id="testimonials">
+        <section id="testimonials" class="flex flex-col text-center items-center">
             <div class="t-description">
                 <h2>Testimonials</h2>
             </div>
 
-            <div class="card">
+            <div class="card flex flex-col items-center gap-5 bg-[var(--White-Color)] rounded-md p-5 max-w-[700px]">
                 <p>★★★★★</p>
                 <p id="text">"This platform is an absolute game-changer for competitive programmers. The
                     extensive range of problems and challenges offered here truly hones your skills and prepares you
                     for
                     any coding competition. With detailed solutions and an active community, it's the perfect
                     environment to sharpen your coding prowess."</p>
-                <img id="photo" src="https://randomuser.me/api/portraits/women/44.jpg" alt="client picture">
+                <img id="photo" class="max-w-[128px] aspect-square"
+                    src="https://randomuser.me/api/portraits/women/44.jpg" alt="client picture">
                 <div class="cardDescription">
                     <p id="Pname"><b>June Cha</b></p>
                     <p id="position">Software Engineer</p>
@@ -217,7 +222,7 @@
         </section> <!-- testimonials section -->
 
     </main>
-    <section id="contact">
+    <section id="contact" class="bg-[var(--Main-Body-Color)] p-10 text-white rounded-tl-[100px] md:ml-[10%]">
         <h2>Contact us</h2>
 
         <form name="myForm" action="#" method="POST">
@@ -239,16 +244,16 @@
         </form>
     </section> <!-- contact section -->
 
-    <footer class="wrapper">
-        <p>© <span></span> Your Competitive Programming Platform. All rights reserved.</p>
+    <footer class="wrapper w-full h-auto text-center">
+        <p class="p-5">© <span></span> Your Competitive Programming Platform. All rights reserved.</p>
     </footer>
 
-<!-- Getting scripty in here! -->
+    <!-- Getting scripty in here! -->
     <script src="./script/script.js"></script>
     <script src="./script/date.js"></script>
     <script src="./script/formValidation.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-     <!-- customized allert popup -->
+    <!-- customized allert popup -->
     </script>
 </body>
 
