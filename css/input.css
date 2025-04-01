@@ -18,13 +18,7 @@
   html {
     font-size: 16px;
     font-family: "Noto Sans Khojki", sans-serif;
-    overflow-x: hidden;
     scroll-behavior: smooth;
-  }
-
-  body {
-    background-color: var(--Background-Color);
-    width: 100%;
   }
 
   a {
@@ -58,18 +52,13 @@
     margin: 0 auto;
   }
 
-  section {
-    /* min-height: 500px; */
-    margin: 50px 0;
-  }
+  section { margin: 50px 0;}
   h1 {
     font-size: clamp(2rem, 2vw + 0.75rem, 3rem);
     font-weight: 900;
   }
 
-  h2 {
-    font-size: clamp(1rem, 5vw + 0.75rem, 2rem);
-  }
+  h2 {font-size: clamp(1rem, 5vw + 0.75rem, 2rem);}
 
   h2,
   h3 {
@@ -89,9 +78,7 @@
     max-width: 600px;
   }
 
-  label {
-    margin-bottom: 10px;
-  }
+  label { margin-bottom: 10px;}
 
   input[type="text"],
   input[type="email"],
