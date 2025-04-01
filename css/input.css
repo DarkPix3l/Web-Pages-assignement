@@ -1,0 +1,85 @@
+@layer base {
+  html {
+    font-size: 16px;
+    font-family: "Noto Sans Khojki", sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--Background-Color);
+    width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  ul,
+  ol {
+    list-style-type: none;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    font-family: "Noto Sans Khojki", sans-serif;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  button {
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: var(--default-radius);
+  }
+
+  .wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  section {
+    min-height: 500px;
+    margin: 105px 0;
+  }
+  h1 {
+    font-size: clamp(2rem, 2vw + 0.75rem, 3rem);
+    font-weight: 900;
+  }
+
+  h2 {
+    font-size: clamp(1rem, 2vw + 0.75rem, 2rem);
+  }
+
+  h3 {
+    color: var(--Primary-Color);
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+}
+
+@layer components {
+  .purple-span {
+    color: var(--Primary-Color);
+  }
+
+  .purple-fill-btn {
+    background-color: var(--Primary-Color);
+    color: var(--White-Color);
+    margin-top: 10px;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: var(--default-radius);
+  }
+
+  .purple-border-btn {
+    border: 1px solid var(--Primary-Color);
+    color: var(--Primary-Color);
+    padding: 0.5rem 1rem;
+    border-radius: var(--default-radius);
+  }
+}
